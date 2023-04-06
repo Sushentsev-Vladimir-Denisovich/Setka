@@ -2,9 +2,9 @@ name: Build dev
 
 on:
   push:
-    branches: [main, dev]
+    branches: [master]
   pull_request:
-    branches: [main, dev]
+    branches: [master]
 
 jobs:
   build:
@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Docs ${{ github.run_number }}
-          path: .\actions\all
+          path: .\actions\
