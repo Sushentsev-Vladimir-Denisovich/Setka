@@ -1,0 +1,33 @@
+name: Build dev
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  build:
+    name: Build and upload artifact
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install Setup .NET Core SDK ${{ matrix.dotnet-version }}
+        uses: subosito/flutter-action@v2
+
+      - name: Build
+        run: dotnet build -o outputs\build.exe
+
+      - name: Upload build
+        uses: actions/upload-artifact@v3
+        with:
+          name: Build ${{ github.run_number }}
+          path: .\outputs\build.exe
+
+      - name: Upload docs
+        uses: actions/upload-artifact@v3
+        with:
+          name: Docs ${{ github.run_number }}
+          path: .\outputs\build.exe
