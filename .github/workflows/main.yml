@@ -24,10 +24,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Build ${{ github.run_number }}
-          path: .\outputs\build.exe
+          path: .\actions\
 
       - name: Upload docs
         uses: actions/upload-artifact@v3
         with:
           name: Docs ${{ github.run_number }}
-          path: .\outputs\build.exe
+          path: .\actions\
