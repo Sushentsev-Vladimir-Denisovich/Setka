@@ -2,9 +2,9 @@ name: Build dev
 
 on:
   push:
-    branches: [master]
+    branches: [main, dev]
   pull_request:
-    branches: [master]
+    branches: [main, dev]
 
 jobs:
   build:
@@ -18,10 +18,16 @@ jobs:
         uses: subosito/flutter-action@v2
 
       - name: Build
-        run: dotnet build 
+        run: dotnet build -o outputs\build.exe
 
       - name: Upload build
         uses: actions/upload-artifact@v3
         with:
           name: Build ${{ github.run_number }}
-          path: outputs/
+          path: .\outputs\build.exe
+
+      - name: Upload docs
+        uses: actions/upload-artifact@v3
+        with:
+          name: Docs ${{ github.run_number }}
+          path: .\outputs\build.exe
