@@ -18,7 +18,7 @@ jobs:
         uses: subosito/flutter-action@v2
 
       - name: Build
-        run: dotnet build -o outputs\build.exe
+        run: dotnet build
 
       - name: Upload build
         uses: actions/upload-artifact@v3
