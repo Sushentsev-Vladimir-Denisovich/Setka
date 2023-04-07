@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build and upload artifact
+    name: Build project
     runs-on: windows-latest
     steps:
       - name: Checkout
@@ -20,14 +20,4 @@ jobs:
       - name: Build
         run: dotnet build
 
-      - name: Upload build
-        uses: actions/upload-artifact@v3
-        with:
-          name: Build ${{ github.run_number }}
-          path: .\actions\
 
-      - name: Upload docs
-        uses: actions/upload-artifact@v3
-        with:
-          name: Docs ${{ github.run_number }}
-          path: .\actions\
