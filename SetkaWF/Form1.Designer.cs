@@ -174,7 +174,7 @@ namespace SetkaWF
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(94, 29);
             this.button4.TabIndex = 13;
-            this.button4.Text = "button4";
+            this.button4.Text = "button4567";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // Form1
