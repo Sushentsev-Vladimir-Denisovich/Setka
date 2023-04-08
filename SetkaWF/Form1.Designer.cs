@@ -92,7 +92,7 @@ namespace SetkaWF
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 40);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Сгенерированное\r\nчисло:";
+            this.label1.Text = "RWFWEFWEFW";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
