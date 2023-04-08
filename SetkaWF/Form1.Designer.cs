@@ -170,7 +170,7 @@ namespace SetkaWF
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(550, 463);
+            this.button4.Location = new System.Drawing.Point(688, 317);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(94, 29);
             this.button4.TabIndex = 13;
