@@ -490,7 +490,7 @@ namespace SetkaWF
             count = 0;
             flag = false;
             tok = true;
-            label3.Text = "Тики Ток: Есть";
+            label3.Text = "Ток: Есть";
             label3.ForeColor = Color.Black;
 
             dataGridView1.RowCount = 13;
