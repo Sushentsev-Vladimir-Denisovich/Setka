@@ -1,0 +1,41 @@
+name: Generate documentation
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate_documentation:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Create docs directory
+      run: |
+        mkdir docs
+        echo "Created docs directory"
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: Install Doxygen
+      run: |
+        sudo apt-get update
+        sudo apt-get install doxygen
+
+    - name: Generate documentation
+      run: |
+        dotnet tool install -g doxter
+        doxter ./SetkaWF.sln -- --output ./docs --project-filter *SetkaWF.sln*
+        
+    - name: Commit changes
+      run: |
+        git config --global user.name 'Your Github Name'
+        git config --global user.email 'your_email@example.com'
+        git add docs
+        git commit -m "Add documentation"
+        git push
