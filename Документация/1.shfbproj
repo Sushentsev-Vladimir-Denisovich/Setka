@@ -43,18 +43,19 @@
     <VisibleItems>InheritedMembers, InheritedFrameworkMembers, ProtectedInternalAsProtected, PublicCompilerGenerated, NonBrowsable</VisibleItems>
     <ApiFilter>
       <Filter entryType="Namespace" fullName="System" isExposed="True" xmlns="">
-  <Filter entryType="Class" fullName="System.MarshalByRefObject" filterName="MarshalByRefObject" isExposed="False" />
-  <Filter entryType="Class" fullName="System.Object" filterName="Object" isExposed="False" />
-</Filter>
-<Filter entryType="Namespace" fullName="System.ComponentModel" isExposed="True" xmlns="">
-  <Filter entryType="Class" fullName="System.ComponentModel.Component" filterName="Component" isExposed="False" />
-</Filter>
-<Filter entryType="Namespace" fullName="System.Windows.Forms" isExposed="True" xmlns="">
-  <Filter entryType="Class" fullName="System.Windows.Forms.ContainerControl" filterName="ContainerControl" isExposed="False" />
-  <Filter entryType="Class" fullName="System.Windows.Forms.Control" filterName="Control" isExposed="False" />
-  <Filter entryType="Class" fullName="System.Windows.Forms.Form" filterName="Form" isExposed="False" />
-  <Filter entryType="Class" fullName="System.Windows.Forms.ScrollableControl" filterName="ScrollableControl" isExposed="False" />
-</Filter></ApiFilter>
+        <Filter entryType="Class" fullName="System.MarshalByRefObject" filterName="MarshalByRefObject" isExposed="False" />
+        <Filter entryType="Class" fullName="System.Object" filterName="Object" isExposed="False" />
+      </Filter>
+      <Filter entryType="Namespace" fullName="System.ComponentModel" isExposed="True" xmlns="">
+        <Filter entryType="Class" fullName="System.ComponentModel.Component" filterName="Component" isExposed="False" />
+      </Filter>
+      <Filter entryType="Namespace" fullName="System.Windows.Forms" isExposed="True" xmlns="">
+        <Filter entryType="Class" fullName="System.Windows.Forms.ContainerControl" filterName="ContainerControl" isExposed="False" />
+        <Filter entryType="Class" fullName="System.Windows.Forms.Control" filterName="Control" isExposed="False" />
+        <Filter entryType="Class" fullName="System.Windows.Forms.Form" filterName="Form" isExposed="False" />
+        <Filter entryType="Class" fullName="System.Windows.Forms.ScrollableControl" filterName="ScrollableControl" isExposed="False" />
+      </Filter>
+    </ApiFilter>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
