@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SetkaWF</name>
+    </assembly>
+    <members>
+        <member name="T:SetkaWF.Form1">
+            <summary>
+             Описание функцинала формы
+            </summary>
+        </member>
+        <member name="M:SetkaWF.Form1.Rez(System.Double[0:,0:],System.Double)">
+            <summary>
+             Функция, осуществляющая разрез по случайному числу
+            </summary>
+            <param name="mas">Массив, определяющий сетку.</param>
+            <param name="rez">Случайное число, по которому вычисляется разрез</param>
+        </member>
+        <member name="M:SetkaWF.Form1.Prov(System.Double[0:,0:],System.Int32,System.Int32)">
+            <summary>
+            Проверяет есть ли сгенерированное случайное число в массиве
+            </summary>
+            <param name="mas">Массив, определяющий сетку.</param>
+            <param name="x">Число x</param>
+            <param name="y">Число y</param>
+        </member>
+        <member name="M:SetkaWF.Form1.Proverka(System.Double[0:,0:])">
+            <summary>
+             Проверяет есть ли ток на сетке
+            </summary>
+            <param name="mas">Массив, определяющий сетку.</param>
+        </member>
+        <member name="F:SetkaWF.Form1.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SetkaWF.Form1.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SetkaWF.Form1.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SetkaWF.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+    </members>
+</doc>

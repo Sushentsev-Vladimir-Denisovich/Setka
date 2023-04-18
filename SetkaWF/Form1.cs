@@ -10,8 +10,12 @@ using System.Windows.Forms;
 
 namespace SetkaWF
 {
+    /// <summary>
+    ///  Описание функцинала формы
+    /// </summary>
     public partial class Form1 : Form
     {
+
         static bool tok = true;
         static double[,] setka = new double[13, 13];
         static double rez;
@@ -25,6 +29,11 @@ namespace SetkaWF
         static double current, count = 0;
         static bool minitok = false;
 
+        /// <summary>
+        ///  Функция, осуществляющая разрез по случайному числу
+        /// </summary>
+        /// <param name="mas">Массив, определяющий сетку.</param>
+        /// <param name="rez">Случайное число, по которому вычисляется разрез</param>
         public static double[,] Rez(double[,] mas, double rez)
         {
             flag = false;
@@ -52,6 +61,12 @@ namespace SetkaWF
             return mas;
         }
 
+        /// <summary>
+        /// Проверяет есть ли сгенерированное случайное число в массиве
+        /// </summary>
+        /// <param name="mas">Массив, определяющий сетку.</param>
+        /// <param name="x">Число x</param>
+        /// <param name="y">Число y</param>
         public static bool Prov(double[,] mas, int x, int y)
         {
             bool t = false;
@@ -82,6 +97,10 @@ namespace SetkaWF
 
             return t;
         }*/
+        /// <summary>
+        ///  Проверяет есть ли ток на сетке
+        /// </summary>
+        /// <param name="mas">Массив, определяющий сетку.</param>
         public static bool Proverka(double[,] mas)
         {
             bool t = true, f = false;

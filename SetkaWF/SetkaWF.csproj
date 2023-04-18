@@ -7,6 +7,10 @@
     <StartupObject>SetkaWF.Program</StartupObject>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\УЧЕБА\Готовые к сдаче\3 курс\Моделирование систем\СДАНЫ\SetkaWF\SetkaWF\SetkaWF.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="outputs\" />
   </ItemGroup>
