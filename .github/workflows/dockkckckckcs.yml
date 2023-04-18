@@ -20,7 +20,7 @@ jobs:
         with:
           build-tasks: dotnet build
           cleanup-tasks: dotnet clean
-          binaries: src/Dummy.Library/bin/Debug/netstandard2.0/Dummy.Library.dll
+          binaries: D:\УЧЕБА\Готовые к сдаче\3 курс\Моделирование систем\СДАНЫ\SetkaWF\SetkaWF\bin\Debug\netcoreapp3.1\SetkaWF.dll
           output-path: docs/api
           user-email: csharp.doc.gen@gmail.com
           user-name: C# Document Generator
