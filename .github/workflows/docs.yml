@@ -33,7 +33,7 @@ jobs:
           path: Output.chm
           
       - name: Generate Documentation 2
-        run: dotnet build /t:Clean,Build /p:Configuration=Release /p:DocumentationFile=./outputs/Output.chm /p:CleanIntermediates=True /p:Platform=x64 /p:ProjectReferencePaths=References /p:HelpFormat=HtmlHelp1 /p:HtmlHelpName="My App Help" /p:HtmlHelp2Enabled=false /p:KeepLogFile=True /p:Logging=Verbose /p:PresentationStyle=VS2015 /p:SandcastlePath="C:\Program Files (x86)\Sandcastle\"
+        run: dotnet build /t:Clean,Build /p:Configuration=Debug /p:DocumentationFile=./outputs/Output.chm /p:CleanIntermediates=True /p:Platform="Any CPU" /p:ProjectReferencePaths=References /p:HelpFormat=HtmlHelp1 /p:HtmlHelpName="My App Help" /p:HtmlHelp2Enabled=false /p:KeepLogFile=True /p:Logging=Verbose /p:PresentationStyle=VS2015 /p:SandcastlePath="C:\Program Files (x86)\Sandcastle\"
 
       - name: Upload docs
         uses: actions/upload-artifact@v3
