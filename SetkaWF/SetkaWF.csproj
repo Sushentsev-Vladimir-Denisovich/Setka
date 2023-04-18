@@ -5,8 +5,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>SetkaWF.Program</StartupObject>
+    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    
   </PropertyGroup>
 
+   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>D:\УЧЕБА\Готовые к сдаче\3 курс\Моделирование систем\СДАНЫ\SetkaWF\SetkaWF\SetkaWF.xml</DocumentationFile>
   </PropertyGroup>
