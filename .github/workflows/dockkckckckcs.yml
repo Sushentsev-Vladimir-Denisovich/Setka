@@ -20,7 +20,7 @@ jobs:
         with:
           build-tasks: dotnet build
           cleanup-tasks: dotnet clean
-          binaries: D:\УЧЕБА\Готовые к сдаче\3 курс\Моделирование систем\СДАНЫ\SetkaWF\SetkaWF\bin\Debug\netcoreapp3.1\SetkaWF.dll
+          binaries: D:\УЧЕБА\Готовые к сдаче\3 курс\Моделирование систем\СДАНЫ\SetkaWF\SetkaWF\bin\Debug\netcoreapp3.1\SetkaWF.deps.json
           output-path: docs/api
           user-email: csharp.doc.gen@gmail.com
           user-name: C# Document Generator
