@@ -1,0 +1,33 @@
+name: Build and Generate Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup .NET Framework
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '5.0.x'
+
+      - name: Restore NuGet packages
+        run: dotnet restore
+
+      - name: Build the solution
+        run: msbuild /t:Build /p:Configuration=Release
+
+      - name: Generate Documentation
+        run: msbuild /t:Clean,Build /p:Configuration=Release /p:DocumentationFile=Output.chm /p:CleanIntermediates=True /p:Platform=x64 /p:ProjectReferencePaths=References /p:HelpFormat=HtmlHelp1 /p:HtmlHelpName="My App Help" /p:HtmlHelp2Enabled=false /p:KeepLogFile=True /p:Logging=Verbose /p:PresentationStyle=VS2015 /p:SandcastlePath="C:\Program Files (x86)\Sandcastle\"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Docs
+          path: Output.chm
