@@ -18,7 +18,6 @@ jobs:
         with:
           build-tasks: dotnet build
           cleanup-tasks: dotnet clean
-          binaries: src/Dummy.Library/bin/Debug/netstandard2.0/Dummy.Library.dll
           output-path: docs/api
           user-email: csharp.doc.gen@gmail.com
           user-name: C# Document Generator
