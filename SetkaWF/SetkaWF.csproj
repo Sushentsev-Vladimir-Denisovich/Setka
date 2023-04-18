@@ -14,5 +14,8 @@
   <ItemGroup>
     <Folder Include="outputs\" />
   </ItemGroup>
+   <ItemGroup>
+    <PackageReference Include="doxter" Version="0.4.4" />
+  </ItemGroup>
 
 </Project>
