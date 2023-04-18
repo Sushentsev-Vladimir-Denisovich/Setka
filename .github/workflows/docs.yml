@@ -21,7 +21,7 @@ jobs:
         run: dotnet restore
 
       - name: Build the solution
-        run: msbuild /t:Build /p:Configuration=Release
+        run: dotnet build --configuration Release
 
       - name: Generate Documentation
         run: msbuild /t:Clean,Build /p:Configuration=Release /p:DocumentationFile=Output.chm /p:CleanIntermediates=True /p:Platform=x64 /p:ProjectReferencePaths=References /p:HelpFormat=HtmlHelp1 /p:HtmlHelpName="My App Help" /p:HtmlHelp2Enabled=false /p:KeepLogFile=True /p:Logging=Verbose /p:PresentationStyle=VS2015 /p:SandcastlePath="C:\Program Files (x86)\Sandcastle\"
