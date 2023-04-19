@@ -3,7 +3,7 @@ name: Generate documentation
 on:
   push:
     branches:
-      - master
+      - dev #чтобы action выполнялся, нужно поменять на master
 
 jobs:
   generate_documentation:
