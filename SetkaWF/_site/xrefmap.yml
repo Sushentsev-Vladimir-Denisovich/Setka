@@ -17,30 +17,21 @@ references:
   name: Form1()
   href: api/SetkaWF.Form1.html#SetkaWF_Form1__ctor
   commentId: M:SetkaWF.Form1.#ctor
-  name.vb: New()
   fullName: SetkaWF.Form1.Form1()
-  fullName.vb: SetkaWF.Form1.New()
   nameWithType: Form1.Form1()
-  nameWithType.vb: Form1.New()
 - uid: SetkaWF.Form1.#ctor*
   name: Form1
   href: api/SetkaWF.Form1.html#SetkaWF_Form1__ctor_
   commentId: Overload:SetkaWF.Form1.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: SetkaWF.Form1.Form1
-  fullName.vb: SetkaWF.Form1.New
   nameWithType: Form1.Form1
-  nameWithType.vb: Form1.New
 - uid: SetkaWF.Form1.Dispose(System.Boolean)
-  name: Dispose(bool)
+  name: Dispose(Boolean)
   href: api/SetkaWF.Form1.html#SetkaWF_Form1_Dispose_System_Boolean_
   commentId: M:SetkaWF.Form1.Dispose(System.Boolean)
-  name.vb: Dispose(Boolean)
-  fullName: SetkaWF.Form1.Dispose(bool)
-  fullName.vb: SetkaWF.Form1.Dispose(Boolean)
-  nameWithType: Form1.Dispose(bool)
-  nameWithType.vb: Form1.Dispose(Boolean)
+  fullName: SetkaWF.Form1.Dispose(System.Boolean)
+  nameWithType: Form1.Dispose(Boolean)
 - uid: SetkaWF.Form1.Dispose*
   name: Dispose
   href: api/SetkaWF.Form1.html#SetkaWF_Form1_Dispose_
@@ -49,14 +40,14 @@ references:
   fullName: SetkaWF.Form1.Dispose
   nameWithType: Form1.Dispose
 - uid: SetkaWF.Form1.Prov(System.Double[0:,0:],System.Int32,System.Int32)
-  name: Prov(double[,], int, int)
+  name: Prov(Double[,], Int32, Int32)
   href: api/SetkaWF.Form1.html#SetkaWF_Form1_Prov_System_Double_0__0___System_Int32_System_Int32_
   commentId: M:SetkaWF.Form1.Prov(System.Double[0:,0:],System.Int32,System.Int32)
-  name.vb: Prov(Double(,), Integer, Integer)
-  fullName: SetkaWF.Form1.Prov(double[,], int, int)
-  fullName.vb: SetkaWF.Form1.Prov(Double(,), Integer, Integer)
-  nameWithType: Form1.Prov(double[,], int, int)
-  nameWithType.vb: Form1.Prov(Double(,), Integer, Integer)
+  name.vb: Prov(Double(,), Int32, Int32)
+  fullName: SetkaWF.Form1.Prov(System.Double[,], System.Int32, System.Int32)
+  fullName.vb: SetkaWF.Form1.Prov(System.Double(,), System.Int32, System.Int32)
+  nameWithType: Form1.Prov(Double[,], Int32, Int32)
+  nameWithType.vb: Form1.Prov(Double(,), Int32, Int32)
 - uid: SetkaWF.Form1.Prov*
   name: Prov
   href: api/SetkaWF.Form1.html#SetkaWF_Form1_Prov_
@@ -65,13 +56,13 @@ references:
   fullName: SetkaWF.Form1.Prov
   nameWithType: Form1.Prov
 - uid: SetkaWF.Form1.Proverka(System.Double[0:,0:])
-  name: Proverka(double[,])
+  name: Proverka(Double[,])
   href: api/SetkaWF.Form1.html#SetkaWF_Form1_Proverka_System_Double_0__0___
   commentId: M:SetkaWF.Form1.Proverka(System.Double[0:,0:])
   name.vb: Proverka(Double(,))
-  fullName: SetkaWF.Form1.Proverka(double[,])
-  fullName.vb: SetkaWF.Form1.Proverka(Double(,))
-  nameWithType: Form1.Proverka(double[,])
+  fullName: SetkaWF.Form1.Proverka(System.Double[,])
+  fullName.vb: SetkaWF.Form1.Proverka(System.Double(,))
+  nameWithType: Form1.Proverka(Double[,])
   nameWithType.vb: Form1.Proverka(Double(,))
 - uid: SetkaWF.Form1.Proverka*
   name: Proverka
@@ -81,13 +72,13 @@ references:
   fullName: SetkaWF.Form1.Proverka
   nameWithType: Form1.Proverka
 - uid: SetkaWF.Form1.Rez(System.Double[0:,0:],System.Double)
-  name: Rez(double[,], double)
+  name: Rez(Double[,], Double)
   href: api/SetkaWF.Form1.html#SetkaWF_Form1_Rez_System_Double_0__0___System_Double_
   commentId: M:SetkaWF.Form1.Rez(System.Double[0:,0:],System.Double)
   name.vb: Rez(Double(,), Double)
-  fullName: SetkaWF.Form1.Rez(double[,], double)
-  fullName.vb: SetkaWF.Form1.Rez(Double(,), Double)
-  nameWithType: Form1.Rez(double[,], double)
+  fullName: SetkaWF.Form1.Rez(System.Double[,], System.Double)
+  fullName.vb: SetkaWF.Form1.Rez(System.Double(,), System.Double)
+  nameWithType: Form1.Rez(Double[,], Double)
   nameWithType.vb: Form1.Rez(Double(,), Double)
 - uid: SetkaWF.Form1.Rez*
   name: Rez
