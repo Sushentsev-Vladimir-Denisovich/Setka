@@ -2,9 +2,9 @@ name: Build dev
 
 on:
   push:
-    branches: [master, dev]
+    branches: [master]
   pull_request:
-    branches: [master, dev]
+    branches: [master]
 
 jobs:
   publish-docs:
@@ -15,7 +15,7 @@ jobs:
     - name: Dotnet Setup
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 5.x
+        dotnet-version: 3.x
 
     - run: dotnet tool update -g docfx
     - run: docfx ./SetkaWF/docfx_project/docfx.json
